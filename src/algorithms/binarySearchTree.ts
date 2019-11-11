@@ -1,4 +1,4 @@
-class TreeNode<K, V> {
+export class TreeNode<K, V> {
   left: TreeNode<K, V> | null;
   right: TreeNode<K, V> | null;
 

@@ -22,7 +22,7 @@ class QuickSort extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
 
-    const values = Array(200).fill(0).map(() => Math.random());
+    const values = Array(500).fill(0).map(() => Math.random());
 
     this.state = {
       context: new Context<Action>(),
@@ -61,7 +61,7 @@ class QuickSort extends React.Component<Props, State> {
       } else if (action instanceof Done) {
         clearInterval(id);
       }
-    }, 50);
+    }, 10);
   }
 
   render() {
